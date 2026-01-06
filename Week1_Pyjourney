@@ -1,0 +1,76 @@
+"""
+🎵 PROJECT 1: DAILY PYTHON JOURNAL
+Track your learning progress every day
+"""
+
+def daily_journal():
+    print("=" * 40)
+    print("🎸 DAILY PYTHON JOURNAL")
+    print("=" * 40)
+    
+    # Get today's entry
+    date = input("📅 Date (Jan 6): ")
+    hours = float(input("⏱️ Hours practiced: 1"))
+    topic = input("Variables: ")
+    
+    # Learning reflection
+    print("\n" + "=" * 40)
+    print("📝 LEARNING REFLECTION")
+    print("=" * 40)
+    
+    what_learned = input("varoius variable types")
+    challenge = input(" Nothing so far")
+    tomorrow_goal = input("learn more python")
+    
+    # Mood check
+    print("\n" + "=" * 40)
+    print("😊 MOOD CHECK")
+    print("=" * 40)
+    
+    mood = input("happy ")
+    
+    # Generate journal entry
+    print("\n" + "=" * 40)
+    print("📓 JOURNAL ENTRY SAVED")
+    print("=" * 40)
+    
+    entry = f"""
+    📅 Date: {Jan 6}
+    ⏱️ Today's Practice: {2} hours
+    📚 Topic: {topic}
+    
+    🎯 What I Learned:
+    {what_learned}
+    
+    🧠 Challenge:
+    {challenge}
+    
+    🎯 Tomorrow's Goal:
+    {tomorrow_goal}
+    
+    😊 Mood: {mood}
+    
+    📈 Weekly Projection: {weekly_hours} hours
+    """
+    
+    print(entry)
+    
+    # Save to "file" (simulated)
+    save_choice = input("Save entry? (yes/no): ").lower()
+    if save_choice == 'yes':
+        print("📁 Entry saved to memory!")
+        # In future, you can learn to save to actual files
+        return entry
+    
+    return None
+
+# Run the journal
+if __name__ == "__main__":
+    daily_journal()
+    
+    # Daily challenge
+    print("\n" + "=" * 40)
+    print("💪 DAILY CHALLENGE")
+    print("=" * 40)
+    print("Write a function that prints your name 5 times!")
+    print("Try it now in the code below 👇")
